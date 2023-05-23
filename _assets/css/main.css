@@ -51,9 +51,15 @@ h6 {
     overflow-wrap: break-word;
 }
 
+.w-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Header */
-.header{
-    position: relative;
+.header {
+    position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
@@ -65,11 +71,89 @@ h6 {
     background-color: #06131F;
 }
 
-.logoSite{
+.logoSite {
     width: 40px;
     height: auto;
 }
 
-.spotify_logo{
+.spotify_logo {
     width: 100%;
+}
+
+/* Main */
+.main {
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.container_cards {
+    padding: 30px 0;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card_music {
+    background: #112030;
+    padding: 20px 25px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.image_music {
+    width: 280px;
+    height: 280px;
+    aspect-ratio: 1;
+}
+
+.image_music img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info_music {
+    margin-top: 16px;
+}
+
+.title_music {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.artist_music {
+    color: #aaa;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.year_release {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Media query */
+@media only screen and (max-width: 1250px) {
+    .container_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .header {
+        padding: 0 25px;
+    }
+    .container_cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
