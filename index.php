@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./_assets/css/main.css">
 </head>
+
 <body>
-    
+
     <!-- Div di collegemaneto per Vue -->
     <div id="app">
-        <h1>{{ message }}</h1>
+        <!-- Header -->
+        <div class="header">
+            <a href="./index.php" class="logoSite">
+                <img class="spotify_logo" src="./_assets/_resources/Spotify_Icon_RGB_Green.svg" alt="Spotify logo">
+            </a>
+        </div>
     </div>
 
     <!-- Vue via CDN -->
@@ -22,4 +29,5 @@
     <!-- Link file Javascript -->
     <script src="./_assets/js/main.js"></script>
 </body>
+
 </html>
