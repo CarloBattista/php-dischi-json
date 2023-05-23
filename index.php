@@ -22,65 +22,17 @@
         </div>
         <!-- Main -->
         <div class="main">
+            <!-- Container Cards -->
             <div class="container_cards w-80">
-                <div class="card_music">
+                <!-- Card ciclate -->
+                <div class="card_music" v-for="(elem, index) in data">
                     <div class="image_music">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b" alt="">
+                        <img :src="elem.poster" :alt="elem.title">
                     </div>
                     <div class="info_music">
-                        <h2 class="title_music">Somebody To Love</h2>
-                        <h3 class="artist_music">Freddie Mercury</h3>
-                        <p class="year_release">1976</p>
-                    </div>
-                </div>
-                <div class="card_music">
-                    <div class="image_music">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b" alt="">
-                    </div>
-                    <div class="info_music">
-                        <h2 class="title_music">Somebody To Love</h2>
-                        <h3 class="artist_music">Freddie Mercury</h3>
-                        <p class="year_release">1976</p>
-                    </div>
-                </div>
-                <div class="card_music">
-                    <div class="image_music">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b" alt="">
-                    </div>
-                    <div class="info_music">
-                        <h2 class="title_music">Somebody To Love</h2>
-                        <h3 class="artist_music">Freddie Mercury</h3>
-                        <p class="year_release">1976</p>
-                    </div>
-                </div>
-                <div class="card_music">
-                    <div class="image_music">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b" alt="">
-                    </div>
-                    <div class="info_music">
-                        <h2 class="title_music">Somebody To Love</h2>
-                        <h3 class="artist_music">Freddie Mercury</h3>
-                        <p class="year_release">1976</p>
-                    </div>
-                </div>
-                <div class="card_music">
-                    <div class="image_music">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b" alt="">
-                    </div>
-                    <div class="info_music">
-                        <h2 class="title_music">Somebody To Love</h2>
-                        <h3 class="artist_music">Freddie Mercury</h3>
-                        <p class="year_release">1976</p>
-                    </div>
-                </div>
-                <div class="card_music">
-                    <div class="image_music">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b" alt="">
-                    </div>
-                    <div class="info_music">
-                        <h2 class="title_music">Somebody To Love</h2>
-                        <h3 class="artist_music">Freddie Mercury</h3>
-                        <p class="year_release">1976</p>
+                        <h2 class="title_music">{{ elem.title }}</h2>
+                        <h3 class="author_music">{{ elem.author }}</h3>
+                        <p class="year_release">{{ elem.year }}</p>
                     </div>
                 </div>
             </div>
